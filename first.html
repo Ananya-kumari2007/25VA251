@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananya</title>
+</head>
+<body>
+     <input type ="text" placeholder="enter your name" id ="inputdata"/>
+      <h2 id="text"></h2>
+      <button ondbclick ="changecolor ()">click on me!</button>
+
+      
+    <script>
+      
+          function changecolor(){
+            let inputvalue = document.getElementById("inputdata")
+            document.getElementById("text").textcontent=inputvalue;
+            inputText.innerHtml="inputvalue";
+            inputText.style.color="red";
+            //random color
+            inputText.Html.style.backgroundcolor='#' +math.floor(math.random()*15777215).tostring(16);
+
+          }
+      </script> 
+</body>
+</html>

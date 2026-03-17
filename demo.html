@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <input type ="text" placeholder="enter your name" id ="inputdata"/>
+      <h2 id="text"></h2>
+      <button ondbclick ="changecolor ()">click on me!</button>
+      <script>
+          function changecolor(){
+            let inputvalue = document.getElementById("inputdata")
+            document.getElementById("text").textcontent=inputvalue;
+            inputText.innerHtml="inputvalue";
+            inputText.style.color="red";
+            //random color
+            inputText.Html.style.backgroundcolor='#' +math.floor(math,random()*15777215).tostring(16);
+            
+
+
+          }
+          
+
+
+      </script>
+
+
+
+
+    <h2>javascript</h2>
+    <script>
+//JavaScript is a dynamically typed language, meaning variables are not tied to a specific
+//  data type, and their type can change during program execution.
+//using var keyword
+var myname="ABES";
+//The document in JavaScript is a global object that represents the entire web page loaded 
+// in the browser
+document.write(myname);//output on browser
+console.log(myname);//o/p on console window
+
+
+function hello(){
+    var msg="thanks to visit!";
+    console.log(msg);
+}
+hello();
+
+// variable declaration using let and const
+let myrollno=20251010822;// no redeclare no reassigned
+console.log(myrollno);
+ 
+ myrollno=2028765;
+console.log(myrollno);
+
+const mymobno=43215789;//no redeclace but can reassigned
+console.log("my contact number is" + mymobno);
+
+
+</script>
+</body>
+</html>
