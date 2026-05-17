@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Paragraph & Change Background</title>
+    <style>
+        #hiddenPara {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showAndChange()">Click Me</button>
+
+    <p id="hiddenPara">This is a hidden paragraph. Now you can see me!</p>
+
+    <script>
+        function showAndChange() {
+            //Show the hidden paragraph
+            document.getElementById("hiddenPara").style.display = "block";
+            
+            // Change background color
+            document.body.style.backgroundColor = "lightblue";
+        }
+    </script>
+
+</body>
+</html> 
+
+
+

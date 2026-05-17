@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// normal function without para
+ function demo() {
+    console.log("hello js")
+ } 
+demo();//function calling
+// function with parameter
+function demo1(text){
+    console.log("hello" +text);
+}
+//function with default parameter
+function add(x,y){
+    var num1=x;
+    var num2=y;
+    var res= num1+num2;
+    console.log("result =" + res);
+}
+ add(5,6);
+ function sub(a,b){
+    var num1=a;
+    var num2=b;
+    var res=num1-num2;
+    console.log("sub=" +res);
+ }
+ sub(5,6);
+ /*synchronous=JavaScript is fundamentally synchronous, meaning code is executed 
+ sequentially, one line at a time, in the order it appears. Each operation must 
+ be completed before the next one can start, which is a "blocking" behavior*/
+ let msg1=function(){
+    console.log("helllo abes");
+ }
+ msg1();
+ //arrow function with mmultiple line
+ let msg2=(age)=>{
+    if(age>=18){
+        console.log("valid age")
+    }
+ }
+ msg2(23);
+ // call back function
+  function cal(a,b,callback){
+    var num1 = a;
+    console.log("first number is " +num1);
+    var num2=b;
+    console.log("second number is " +num2);
+    var res= num1+ num2;
+    callback(res);
+  }
+function display(res){
+    console.log("result =" + res);
+}
+cal(3,4,display);
+
+(function(){
+    console.log("hello IIFE");
+})();
+   //short code for above function
+   (msg=>console.log("IIFE")) ();
+    console.log(typeof(msg));
+
+    //local storage
+    /*JavaScript localStorage is a feature that enables websites to store small amounts
+     of persistent data as key-value
+     pairs directly in the user's browser. This data has no expiration time and remains
+      available even after the browser or the operating system is closed, persisting until
+       it is explicitly cleared by the application or the user.*/ 
+
+     let myInfo={
+        Name:"json",
+        sec:"15",
+        age:34,
+        address: " ghaziabad",
+        email:"ana2007@gmail.com"
+     };
+     //convert object info in to json string
+     let myInfoData=JSON.stringify(myInfo);
+
+     // set the data  
+     localStorage.setItem('preference',myInfoData);
+
+     //get data (retrieve the data)
+     let myPreference=localStorage.getItem('preference');
+
+     //convert in to JSON object 
+     let myInfoPre=JSON.parse(myPreference);
+
+     //access keys 
+     console.log(myInfoPre.Name);
+
+     //high order function:--
+     
+     let num =[3,54,6,33,3,5,8,9,56];
+     let result = num.map(n=>n*2);
+     console.log(result);
+    
+
+     //reduce:---
+     let sum=num.reduce((total,n)=>total+n);
+     console.log(sum);
+
+     //filter:----
+     let sorting=num.filter(n=>n>3);
+     console.log(sorting);
+     
+     //
+    
+
+
+
+
+
+    </script>
+</body>
+</html>
