@@ -1,18 +1,19 @@
-import './App.css'
-
-import studentregistrationform from './assets/component/studentregistrationform'
-
+import React from "react";
+import Exp7 from "./Exp7";
+import "./Exp7.css";
 
 function App() {
-  
-
   return (
-    <>
-      <h1>Welcome to react.</h1>
-     
-      <UseState />
-    </>
-  )
+    <div>
+        < Exp7
+          
+        />
+
+      <footer className="footer">
+        © 2026 Student Information System | All Rights Reserved
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;
